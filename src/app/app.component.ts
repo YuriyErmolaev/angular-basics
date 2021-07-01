@@ -21,6 +21,7 @@ export class AppComponent {
 
   onInput(event: any) {
     console.log('Event', event);
+    this.inputValue = event.target.value
   }
 
 }
