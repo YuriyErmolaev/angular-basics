@@ -19,9 +19,16 @@ export class AppComponent {
     //
   }
 
-  onInput(event: any) {
-    console.log('Event', event);
+  // onInput(event: KeyboardEvent) {
+  //   this.inputValue = (<HTMLInputElement>event.target).value
+  // }
+
+  onInput (event: any) {
     this.inputValue = event.target.value
+  }
+
+  onClick() {
+    alert( 'Button click! )' )
   }
 
 }

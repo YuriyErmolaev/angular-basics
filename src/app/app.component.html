@@ -7,7 +7,10 @@
 <!--<p><strong>{{ 40 + 2 }}</strong></p>-->
 <!--<p><strong>{{ 'Hello' + ' World' }}</strong></p>-->
 
-<input type="text" (input)="onInput($event)">
+<button (click)="onClick()" >Click me!</button>
+
+<input type="text" (keyup.enter)="onInput($event)">
+
 <p><strong>{{inputValue}}</strong></p>
 
 <hr>
