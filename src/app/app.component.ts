@@ -8,30 +8,10 @@ import {timeout} from "rxjs/operators";
 })
 export class AppComponent {
 
-  title = 'Dynamic title'
-  number = 42
-  arr = [1, 2, 3]
-  obj = { a: 1, b: { c: 2 }  }
+  title = 'Title';
 
-  inputValue = ''
-
-  constructor() {
-    //
-  }
-
-  // onInput(event: KeyboardEvent) {
-  //   this.inputValue = (<HTMLInputElement>event.target).value
-  // }
-
-  onInput (event: any) {
-    this.inputValue = event.target.value
-  }
-
-  onBlur (str: string) {
-    this.inputValue = str
-  }
-  onClick() {
-    alert( 'Button click! )' )
+  onInput( event: any ){
+    this.title = event.target.value;
   }
 
 }
