@@ -27,6 +27,9 @@ export class AppComponent {
     this.inputValue = event.target.value
   }
 
+  onBlur (str: string) {
+    this.inputValue = str
+  }
   onClick() {
     alert( 'Button click! )' )
   }
