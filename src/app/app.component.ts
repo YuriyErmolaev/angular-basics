@@ -8,6 +8,6 @@ import {timeout} from "rxjs/operators";
 })
 export class AppComponent {
 
-  backgroundToggle = false;
+  backgroundToggle = false
 
 }
