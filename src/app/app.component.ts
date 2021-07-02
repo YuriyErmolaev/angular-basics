@@ -8,10 +8,6 @@ import {timeout} from "rxjs/operators";
 })
 export class AppComponent {
 
-  title = 'Title';
-
-  onInput( event: any ){
-    this.title = event.target.value;
-  }
+  backgroundToggle = false;
 
 }
